@@ -1,0 +1,15 @@
+.container {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  &_card {
+    background-color: #535bf2;
+    width: 50px;
+    height: 50px;
+  }
+}
