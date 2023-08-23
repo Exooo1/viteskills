@@ -74,3 +74,10 @@ user.happyBirthday()
 user.happyBirthday()
 user.happyBirthday()
 console.log(user.age)
+
+
+const recursia = (n:number) =>{
+    if(n<10) return recursia(n+1)
+    else return n
+}
+console.log(recursia(1))
