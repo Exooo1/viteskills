@@ -76,8 +76,99 @@ user.happyBirthday()
 console.log(user.age)
 
 
-const recursia = (n:number) =>{
-    if(n<10) return recursia(n+1)
+const recursia = (n: number) => {
+    if (n < 10) return recursia(n + 1)
     else return n
 }
 console.log(recursia(1))
+
+
+const constfunc = (v: any) => {
+    return () => {
+        return v
+    }
+}
+
+let array = []
+for (let i = 0; i < 10; i++) {
+    array[i] = constfunc(i)()
+}
+
+console.log(array)
+
+// console.log(array[3]())
+// console.log(array[5]())
+//
+// let array = []
+// for (var i = 0; i < 10; i++) {
+//     array[i] = () => i
+// }
+//
+// console.log(array[3]())
+// console.log(array[5]())
+
+const user1 = {
+    name: 'vlas',
+    returnName() {
+        const returnN = () => {
+            return this.name
+        }
+        return returnN()
+    },
+}
+
+console.log(user1.returnName())
+
+const func2 = (name: string, age: 22, ...rest: any) => {
+
+}
+console.log(func2.length)
+
+function f(a, b, c) {
+    console.log('This is ABC', a, b, c)
+    return this.name
+}
+
+const user2 = {
+    name: 'vlasik',
+    m() {
+        return this.name
+    }
+}
+console.log(user2.m())
+// user2.m = f
+console.log(user2.m())
+console.log(f.bind(user2, 4, 3, 2)())
+console.log(f.apply(user2, [7, 6, 5]))
+console.log(f.call(user2, 10, 11, 12))
+
+const func3 = (x: number, y: number) => {
+    return x + y
+}
+
+const result = func3.bind(null, 5)
+console.log(result(10))
+console.log(result(11))
+
+const user3 = {
+    age: 25,
+
+    getName() {
+        this.age = this.age + 10
+        return this
+    },
+
+    setName() {
+        return this
+    }
+}
+
+console.log(user3.getName().age)
+
+const func5 = (f: (i: number) => number, x: number) => {
+    const arr = [1, 2, 3, 4, 5, 6]
+    return arr.map(el => f(el) + x)
+}
+console.log(func5((i: number) => {
+    return i * i
+}, 10))
