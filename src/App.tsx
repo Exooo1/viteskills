@@ -5,6 +5,7 @@ import './App.css'
 import {DragAndDrop} from "./components/draganddrop/draganddrop";
 import {LeetCode} from "./leetCode/leetcode";
 import {Function} from "./flanagan/function/function";
+import {ConsoleLoggin} from "./other/consoleLoggin";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -29,7 +30,8 @@ function App() {
                 </p>
                 {/*<DragAndDrop/>*/}
                 {/*<LeetCode/>*/}
-                <Function/>
+                {/*<Function/>*/}
+                <ConsoleLoggin/>
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
