@@ -90,13 +90,13 @@ export const LeetCode = () => {
 // console.log(jump([2,5,0,0]))//true
 
 
-// const emptyObject = (value: any) => {
-//     if(Array.isArray(value)) return  !value.length
-//     return !Object.values(value).length
-// }
-//
-// console.log(emptyObject({name:'vlas'}))
-// console.log(emptyObject([]))
+const emptyObject = (value: any) => {
+    if (value?.length) return !value.length
+    return !Object.values(value).length
+}
+
+console.log(emptyObject({name: 'vlas'}))
+console.log(emptyObject([]))
 
 // const expect = (val) => {
 //     return {
@@ -113,19 +113,42 @@ export const LeetCode = () => {
 // console.log(expect(10).toBe(5))
 // console.log(expect(10).notToBe(null))
 
-const prices = (prices) => {
-    let maxPrice = 0
-    let minPrice = prices[0]
-    const price = []
-    for (let i = 0; i < prices.length; i++) {
-        minPrice = minPrice < prices[i] ? minPrice : prices[i]
-        if(prices[i + 1]){
-            price.push(prices[i + 1] - minPrice)
-        }
-    }
-    return Math.max(...price.filter(el=>el>0)) === -Infinity ? 0 : Math.max(...price.filter(el=>el>0))
-}
+// const prices = (prices) => {
+//     let maxPrice = 0
+//     let minPrice = prices[0]
+//     const price = []
+//     for (let i = 0; i < prices.length; i++) {
+//         minPrice = minPrice < prices[i] ? minPrice : prices[i]
+//         if(prices[i + 1]){
+//             price.push(prices[i + 1] - minPrice)
+//         }
+//     }
+//     return Math.max(...price.filter(el=>el>0)) === -Infinity ? 0 : Math.max(...price.filter(el=>el>0))
+// }
 
-console.log(prices([7, 1, 5, 3, 6, 4]))
-console.log(prices([7, 6, 4, 3, 1]))
-console.log(prices([2, 4, 1]))
+// const prices2 = (prices) => {
+//     let min = prices[0]
+//     let max = 0
+//     for (let i = 0; i < prices.length; i++) {
+//         min = min > prices[i] ? prices[i] : min
+//         if (prices[i + 1] !== undefined) {
+//             max = (prices[i + 1] - min) > max ? (prices[i + 1] - min) : max
+//         }
+//     }
+//     return max
+// }
+
+// console.log(prices2([7, 1, 5, 3, 6, 4]))
+// console.log(prices2([7, 6, 4, 3, 1]))
+// console.log(prices2([2, 4, 1]))
+//
+//
+// const reverse = (s) => {
+//     const arr = []
+//     for (let i = s.length - 1; i >= 0; i--) {
+//        arr.push(s[i])
+//     }
+//     console.log(arr.length)
+//     return arr
+// }
+// console.log(reverse(["h","e","l","l","o"]))
