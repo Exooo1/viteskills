@@ -13,13 +13,12 @@ export const LeetCode = () => {
 // }
 // sleep(3000).then(console.log)
 //
-// const counter = (n: number) => {
-//     let count = n
+// const createCounter = (n: number) => {
 //     return () => {
-//         return count++
+//         return n++
 //     }
 // }
-// const resultCounter = counter(10)
+// const resultCounter = createCounter(10)
 // console.log(resultCounter())
 // console.log(resultCounter())
 // console.log(resultCounter())
@@ -90,13 +89,13 @@ export const LeetCode = () => {
 // console.log(jump([2,5,0,0]))//true
 
 
-const emptyObject = (value: any) => {
-    if (value?.length) return !value.length
-    return !Object.values(value).length
-}
-
-console.log(emptyObject({name: 'vlas'}))
-console.log(emptyObject([]))
+// const emptyObject = (value: any) => {
+//     if (value?.length) return !value.length
+//     return !Object.values(value).length
+// }
+//
+// console.log(emptyObject({name: 'vlas'}))
+// console.log(emptyObject([]))
 
 // const expect = (val) => {
 //     return {
@@ -152,3 +151,47 @@ console.log(emptyObject([]))
 //     return arr
 // }
 // console.log(reverse(["h","e","l","l","o"]))
+//
+// const evenOrOdd = (num) => {
+//     return !(num % 2) ? 'Even' : 'Odd'
+// }
+//
+// console.log(evenOrOdd(3))
+//
+// const listFiltering = (l) => {
+//     return l.filter(el => typeof el !== 'string')
+// }
+//
+// console.log(listFiltering([1,2,'aasf','1','123',123]))
+
+const evenOrOddArray = (integers) => {
+    const even = integers.filter(el => !(el % 2))
+    const odd = integers.filter(el => el % 2)
+    return even.length > odd.length ? +odd.join('') : +even.join('')
+    // let number = 0
+    // const type = integers.filter(el => {
+    //     if (!(el % 2)) return 1
+    // })
+    // if (type.length > 1) {
+    //     integers.forEach(el => {
+    //         if (el % 2) number = el
+    //     })
+    // } else {
+    //     integers.forEach(el => {
+    //         if (!(el % 2)) number = el
+    //     })
+    // }
+    // return number
+}
+console.log(evenOrOddArray([150, 230, 50, 3]))
+
+const yourFriend = (friends) => friends.filter(el => el.length === 4)
+console.log(yourFriend(["Love", "Your", "Face", "1"]))
+
+const highAndLowest = (numbers: string) => {
+    const min = Math.min(...numbers.split(' ').map(el=>+el))
+    const max = Math.max(...numbers.split(' ').map(el=>+el))
+    return `${max} ${min}`
+}
+
+console.log(highAndLowest("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
