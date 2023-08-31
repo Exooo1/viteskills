@@ -7,6 +7,7 @@ import {LeetCode} from "./leetCode/leetcode";
 import {Function} from "./flanagan/function/function";
 import {ConsoleLoggin} from "./other/consoleLoggin";
 import {Memoization} from "./other/memoization";
+import {Class} from "./flanagan/class/class";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -33,7 +34,8 @@ function App() {
                 {/*<LeetCode/>*/}
                 {/*<Function/>*/}
                 {/*<ConsoleLoggin/>*/}
-                <Memoization/>
+                {/*<Memoization/>*/}
+                <Class/>
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
