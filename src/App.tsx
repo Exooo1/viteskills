@@ -8,6 +8,7 @@ import {Function} from "./flanagan/function/function";
 import {ConsoleLoggin} from "./other/consoleLoggin";
 import {Memoization} from "./other/memoization";
 import {Class} from "./flanagan/class/class";
+import {Async} from "./other/async";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -35,7 +36,8 @@ function App() {
                 {/*<Function/>*/}
                 {/*<ConsoleLoggin/>*/}
                 {/*<Memoization/>*/}
-                <Class/>
+                {/*<Class/>*/}
+                <Async/>
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more

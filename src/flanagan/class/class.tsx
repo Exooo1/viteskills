@@ -29,7 +29,7 @@ f.range = {
 console.log(f.range)
 
 function Range(form, to) {
-    if(!new.target) return new Range(form, to)
+    if (!new.target) return new Range(form, to)
     this["form"] = form
     this["to"] = to
 }
@@ -42,7 +42,7 @@ Range.prototype = {
 const test = new Range(15, 30)
 console.log(test.getRange())
 
-const n = Range(66,70)
+const n = Range(66, 70)
 console.log(n)
 
 class User {
