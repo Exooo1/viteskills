@@ -36,8 +36,8 @@ function App() {
                 {/*<Function/>*/}
                 {/*<ConsoleLoggin/>*/}
                 {/*<Memoization/>*/}
-                {/*<Class/>*/}
-                <Async/>
+                <Class/>
+                {/*<Async/>*/}
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more

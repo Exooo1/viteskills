@@ -32,6 +32,9 @@ function Range(form, to) {
     if (!new.target) return new Range(form, to)
     this["form"] = form
     this["to"] = to
+    this["good"] = function (){
+        return 'hood'
+    }
 }
 
 Range.prototype = {
@@ -39,8 +42,11 @@ Range.prototype = {
         return this.form + this.to
     }
 }
-const test = new Range(15, 30)
-console.log(test.getRange())
+// const test = new Range(15, 30)
+const test = Object.create(new Range(15,30))
+test.form = 55
+
+console.log(test,'test')
 
 const n = Range(66, 70)
 console.log(n)
@@ -65,4 +71,33 @@ class User {
 
 const vlas = new User('vlas', 25)
 console.log(vlas.test())
+console.log(vlas)
 
+// будет true
+const testt = Object.create(test)
+console.log(testt instanceof Range)
+console.log(testt)
+
+function Strange() {}
+Strange.prototype = Range.prototype;
+console.log(new Strange () instanceof Range)
+
+function range1(){
+
+}
+range1.methods = {
+    hello:'vlas'
+}
+
+
+const user1 = {
+    name:'vlas'
+}
+const user2 = user1
+
+console.log(user1.isPrototypeOf(user2))
+
+let F = function () {}
+let i = F.prototype
+let c = i.constructor
+c === F

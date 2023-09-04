@@ -172,3 +172,14 @@ const func5 = (f: (i: number) => number, x: number) => {
 console.log(func5((i: number) => {
     return i * i
 }, 10))
+
+const cary = (a) => {
+    return (b) => {
+        const result = a ** a + b ** b
+        return (c) => {
+            return result * c
+        }
+    }
+}
+
+console.log(cary(10)(20)(30))
