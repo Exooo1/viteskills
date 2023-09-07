@@ -102,42 +102,42 @@ export const Class = () => {
 // let c = i.constructor
 // c === F
 
-class Duties {
-    food() {
-        return 'i am eating'
-    }
-
-    sit() {
-        return 'i am sitting'
-    }
-}
-
-class User extends Duties {
-    name: string
-    age: number
-
-    constructor(name: string, age: number) {
-        super()
-        this.name = name
-        this.age = age
-    }
-
-    static tt(s: string) {
-        return `Hello my name is ${this.name}`
-    }
-
-    set setName(name: string) {
-        this.name = name
-    }
-
-    get getName() {
-        return this.name
-    }
-
-    getFullName() {
-        return this.name + this.age
-    }
-}
+// class Duties {
+//     food() {
+//         return 'i am eating'
+//     }
+//
+//     sit() {
+//         return 'i am sitting'
+//     }
+// }
+//
+// class User extends Duties {
+//     name: string
+//     age: number
+//
+//     constructor(name: string, age: number) {
+//         super()
+//         this.name = name
+//         this.age = age
+//     }
+//
+//     static tt(s: string) {
+//         return `Hello my name is ${this.name}`
+//     }
+//
+//     set setName(name: string) {
+//         this.name = name
+//     }
+//
+//     get getName() {
+//         return this.name
+//     }
+//
+//     getFullName() {
+//         return this.name + this.age
+//     }
+// }
 
 // const diana = new User('diana', 22)
 //
@@ -155,25 +155,90 @@ class User extends Duties {
 // const result = test(5, 5);
 
 
-class Buffer {
-    size = 0
-    #city = 'Bobruisk'
+// class Buffer {
+//     size = 0
+//     #city = 'Bobruisk'
+//
+//     changeSize(newSize) {
+//         this.#city = 'Good'
+//         this.size = newSize
+//     }
+// }
+//
+// const buf = new Buffer()
+// const buf2 = new Buffer()
+//
+// buf.changeSize = function (newSize) {
+//     return this.size = newSize + 5
+// }
+// buf.changeSize(155)
+// buf2.changeSize(155)
+// console.log(buf)
+// console.log(buf2)
+// interface  IUser {
+//     age?:number
+// }
+// class User implements IUser {
+//     name:string = 'vlas'
+//     static getRandomNumber(){
+//         return (Math.random() * 10 * 100).toFixed(2)
+//     }
+// }
+//
+// const vlas = new User()
+// vlas.age = 22
+// console.log(vlas)
+// console.log(User.getRandomNumber())
 
-    changeSize(newSize) {
-        this.#city = 'Good'
-        this.size = newSize
+// class Complex {
+//     a: number
+//     b: number
+//
+//     static GET_DEFAULT_NAME: number | any = 'Vlad'
+//
+//     constructor(a, b) {
+//         this.a = a
+//         this.b = b
+//     }
+//
+//     plus(t, c) {
+//         return new Complex(t, c)
+//     }
+// }
+//
+//
+// const test = new Complex(15, 10)
+//
+// console.log(test.plus(100, 5).plus(15, 20).plus(1, 2))
+// console.log(Complex.GET_DEFAULT_NAME )
+// Complex.GET_DEFAULT_NAME = new Complex(2,3).plus(2,4)
+// console.log(Complex.GET_DEFAULT_NAME )
+
+class Life {
+    getFood(){
+        return 'got food'
+    }
+
+    getSleep(){
+        return 'got sleep'
     }
 }
 
-const buf = new Buffer()
-const buf2 = new Buffer()
+class User extends Life{
+    name: string = ''
 
-buf.changeSize = function (newSize) {
-    return this.size = newSize + 5
+    constructor(name) {
+        super()
+        this.name = name
+    }
+
+    getNames() {
+        return this.name
+    }
 }
-buf.changeSize(155)
-buf2.changeSize(155)
-console.log(buf)
-console.log(buf2)
 
-
+const vlas = new User('vlas')
+console.log(vlas)
+Life.prototype.getEat = function (){
+    return 'got Eat'
+}
