@@ -9,6 +9,7 @@ import {ConsoleLoggin} from "./other/consoleLoggin";
 import {Memoization} from "./other/memoization";
 import {Class} from "./flanagan/class/class";
 import {Async} from "./other/async";
+import {CopyObject} from "./utils/copyObject";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -38,6 +39,7 @@ function App() {
                 {/*<Memoization/>*/}
                 <Class/>
                 {/*<Async/>*/}
+                {/*<CopyObject/>*/}
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more

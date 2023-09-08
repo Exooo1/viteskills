@@ -213,32 +213,69 @@ export const Class = () => {
 // console.log(Complex.GET_DEFAULT_NAME )
 // Complex.GET_DEFAULT_NAME = new Complex(2,3).plus(2,4)
 // console.log(Complex.GET_DEFAULT_NAME )
+//
+// class Life {
+//     getFood(){
+//         return 'got food'
+//     }
+//
+//     getSleep(){
+//         return 'got sleep'
+//     }
+// }
+//
+// class User extends Life{
+//     name: string = ''
+//
+//     constructor(name) {
+//         super()
+//         this.name = name
+//     }
+//
+//     getNames() {
+//         return this.name
+//     }
+// }
+//
+// const vlas = new User('vlas')
+// vlas.test = () =>{
+//     console.log('Hello friends')
+// }
+// console.log(vlas)
+// Life.prototype.getEat = function (){
+//     return 'got Eat'
+// }
 
-class Life {
-    getFood(){
-        return 'got food'
-    }
+// Number.prototype.getTime = function (f) {
+//     for(let i  = 0;i < this; i++){
+//         f(i)
+//     }
+// }
+//
+// const t = 2
+// t.getTime((i)=>console.log('Hello' + i))
 
-    getSleep(){
-        return 'got sleep'
+class EZArray extends Array {
+    get first () { return this[0]; }
+    get last () { return this[this.length-1]; }
+}
+let a = new EZArray () ;
+console.log(a instanceof EZArray)
+console.log(a instanceof Array)
+a.name = 'vlas'
+a.push(1,2,3,4,5)
+console.log(a)
+
+function User (){
+    this.name='vlas'
+    this.getName = function (){
+        console.log('Name')
     }
 }
-
-class User extends Life{
-    name: string = ''
-
-    constructor(name) {
-        super()
-        this.name = name
-    }
-
-    getNames() {
-        return this.name
-    }
+User.prototype.test = function(){
+   console.log(this.name)
 }
 
-const vlas = new User('vlas')
-console.log(vlas)
-Life.prototype.getEat = function (){
-    return 'got Eat'
-}
+const vlas = new User
+vlas.test()
+
