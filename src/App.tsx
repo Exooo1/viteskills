@@ -10,6 +10,7 @@ import {Memoization} from "./other/memoization";
 import {Class} from "./flanagan/class/class";
 import {Async} from "./other/async";
 import {CopyObject} from "./utils/copyObject";
+import {CheckOnNumber} from "./utils/checkOnNumber";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -40,6 +41,7 @@ function App() {
                 <Class/>
                 {/*<Async/>*/}
                 {/*<CopyObject/>*/}
+                {/*<CheckOnNumber/>*/}
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more

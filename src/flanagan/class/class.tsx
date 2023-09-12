@@ -255,27 +255,141 @@ export const Class = () => {
 // const t = 2
 // t.getTime((i)=>console.log('Hello' + i))
 
-class EZArray extends Array {
-    get first () { return this[0]; }
-    get last () { return this[this.length-1]; }
-}
-let a = new EZArray () ;
-console.log(a instanceof EZArray)
-console.log(a instanceof Array)
-a.name = 'vlas'
-a.push(1,2,3,4,5)
-console.log(a)
+// class EZArray extends Array {
+//     get first () { return this[0]; }
+//     get last () { return this[this.length-1]; }
+// }
+// let a = new EZArray () ;
+// console.log(a instanceof EZArray)
+// console.log(a instanceof Array)
+// a.name = 'vlas'
+// a.push(1,2,3,4,5)
+// console.log(a)
+//
+// function User (){
+//     this.name='vlas'
+//     this.getName = function (){
+//         console.log('Name')
+//     }
+// }
+// User.prototype.test = function(){
+//    console.log(this.name)
+// }
+//
+// const vlas = new User
+// vlas.test()
 
-function User (){
-    this.name='vlas'
-    this.getName = function (){
-        console.log('Name')
+// class ArraySon extends Array {
+//     arr:number[]
+//     randomNumber:number
+//     constructor(arr: number[], randomNumber: number) {
+//         if (!Array.isArray(arr)) {
+//             throw new Error("It isn't array!")
+//         }
+//         super()
+//         this.arr = arr
+//         this.randomNumber = randomNumber
+//     }
+//
+//     set countArray(number){
+//         if(!isFinite(number)) throw new Error(" it isn't number!")
+//         this.arr.push(number)
+//     }
+// }
+//
+// const a = new ArraySon([],20)
+// a.push(23)
+// a.countArray = 'asqw'
+// console.log(a)
+
+// class AdditionalUser {
+//     prefer?: string = "default"
+//
+//     constructor(prefer?: string) {
+//         this.prefer = prefer || this.prefer
+//     }
+//
+//     getPrefer() {
+//         return `I prefer eat ${this.prefer}`
+//     }
+//
+//     getListPrefer(something?: string) {
+//         return 'Chicken, Pig, Banana, Cherry ' + something || ''
+//     }
+//
+//     getFavourite() {
+//         return 'Макароны, доширак, Бульон'
+//     }
+// }
+//
+// class User extends AdditionalUser {
+//     name: string
+//
+//     constructor(name: string) {
+//         super();
+//         this.name = name
+//     }
+//
+//     arrowFunction = () => {
+//         return 1
+//     }
+//
+//     getListPrefer(value?: string): string {
+//         return super.getListPrefer(`Chocolate, Apple, ${value ?? ''}`) + super.getPrefer()
+//     }
+//
+//     getFavourite(): string {
+//         return 'Бульон, Сникерс';
+//     }
+// }
+//
+// class Test {
+//
+// }
+//
+// const vlas = new User('Vlas')
+// const diana = new User('Diana')
+//
+// console.log(vlas)
+// console.log(vlas.getPrefer())
+// console.log(vlas.getListPrefer())
+// console.log(diana.getListPrefer('gamarjoba'))
+// console.log(vlas.getFavourite())
+
+class Life {
+    eat() {
+        return 'eating'
+    }
+
+    run() {
+        return 'running'
+    }
+
+    sleep() {
+        throw new Error('Realize your method sleep!')
     }
 }
-User.prototype.test = function(){
-   console.log(this.name)
+
+class Person extends Life {
+    name: string
+
+    constructor(name:string) {
+        super();
+        this.name = name
+    }
+
+    sleep() {
+        return 'i have deep dream'
+    }
+
+    toString(){
+        return super.run() + super.eat() + this.sleep()
+    }
 }
 
-const vlas = new User
-vlas.test()
-
+const diana = new Person('Diana')
+console.log(diana)
+console.log(diana.toString())
+console.log(diana.eat())
+console.log(diana.run())
+console.log(diana.sleep())
