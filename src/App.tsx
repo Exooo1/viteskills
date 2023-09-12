@@ -11,6 +11,7 @@ import {Class} from "./flanagan/class/class";
 import {Async} from "./other/async";
 import {CopyObject} from "./utils/copyObject";
 import {CheckOnNumber} from "./utils/checkOnNumber";
+import {ImportExports} from "./flanagan/importsExports/importExports";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -38,10 +39,11 @@ function App() {
                 {/*<Function/>*/}
                 {/*<ConsoleLoggin/>*/}
                 {/*<Memoization/>*/}
-                <Class/>
+                {/*<Class/>*/}
                 {/*<Async/>*/}
                 {/*<CopyObject/>*/}
                 {/*<CheckOnNumber/>*/}
+                <ImportExports/>
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
