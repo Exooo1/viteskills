@@ -13,6 +13,7 @@ import {CopyObject} from "./utils/copyObject";
 import {CheckOnNumber} from "./utils/checkOnNumber";
 import {ImportExports} from "./flanagan/importsExports/importExports";
 import {PrintComponents} from "./components/print/printComponents";
+import {Upload} from "./components/uplaod/upload";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -46,8 +47,9 @@ function App() {
             {/*    /!*<CheckOnNumber/>*!/*/}
             {/*    /!*<ImportExports/>*!/*/}
             {/*    <PrintComponents/>*/}
+            <Upload/>
             {/*</div>*/}
-            <PrintComponents/>
+            {/*<PrintComponents/>*/}
             {/*<p className="read-the-docs">*/}
             {/*    Click on the Vite and React logos to learn more*/}
             {/*</p>*/}
