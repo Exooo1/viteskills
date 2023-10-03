@@ -1,4 +1,4 @@
-export const math = (() => {
+const math = (() => {
     const sayHello = (name: string) => {
         return `Hello ${name}`
     }
@@ -8,10 +8,19 @@ export const math = (() => {
     return {sayHello, sayBye}
 })()
 
-
-export const user = (() => {
+const user = (() => {
     const modules = {}
     return modules
 })()
+export default {user, math};
+// export default 'hello';
+
+const alesha = {}
+
+export {user, math}
+
+export {alesha}
+
+
 
 
