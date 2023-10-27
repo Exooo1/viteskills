@@ -1,8 +1,55 @@
 export const LeetCode = () => {
     return <section>
-        <h1>LeetCode HERE!</h1>
+        <h1>LeetCode is HERE!</h1>
     </section>
 }
+
+function Animal() {
+    this.func = function () {
+        return 'hello'
+    }
+}
+
+function Common() {
+    this.funct = function () {
+        return 'funct'
+    }
+}
+
+Common.prototype.sayHello = () =>{
+    return 'Hello motherFucker'
+}
+
+Animal.prototype = Object.create(Common.prototype)
+Animal.prototype.constructor = Animal
+console.log(new Animal().sayHello())
+
+
+// const recurs = (obj, path, count) => {
+//     if (count === path.length) return obj
+//     return recurs(obj[path[count]], path, count + 1)
+// }
+// const pathGet = (obj, path) => {
+//     const newPath = path.split('.')
+//     let count = 0
+//     let result = null
+//     if (newPath.length) {
+//         result = recurs(obj, newPath, count)
+//     }
+//     return result
+// }
+//
+// const object = {
+//     a: {
+//         b: {
+//             c: 'd'
+//         }
+//     },
+//     e: 'f'
+// }
+// console.log(pathGet(object, 'a.b'))
+// console.log(pathGet(object, 'a.b.c'))
+// console.log(pathGet(object, 'a.e'))
 
 // const sleep = (millis: number) => {
 //     return new Promise((resolve, reject) => {
@@ -189,9 +236,14 @@ const yourFriend = (friends) => friends.filter(el => el.length === 4)
 console.log(yourFriend(["Love", "Your", "Face", "1"]))
 
 const highAndLowest = (numbers: string) => {
-    const min = Math.min(...numbers.split(' ').map(el=>+el))
-    const max = Math.max(...numbers.split(' ').map(el=>+el))
+    const min = Math.min(...numbers.split(' ').map(el => +el))
+    const max = Math.max(...numbers.split(' ').map(el => +el))
     return `${max} ${min}`
 }
 
 console.log(highAndLowest("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+
+function Animals (){
+
+}
+

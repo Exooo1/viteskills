@@ -20,7 +20,7 @@ function App() {
         <>
             {/*<div>*/}
             {/*    /!*<DragAndDrop/>*!/*/}
-            {/*    /!*<LeetCode/>*!/*/}
+            {/*    <LeetCode/>*/}
             {/*    /!*<Function/>*!/*/}
             {/*    /!*<ConsoleLoggin/>*!/*/}
             {/*    /!*<Memoization/>*!/*/}
