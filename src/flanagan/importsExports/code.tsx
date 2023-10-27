@@ -26,7 +26,7 @@ const alesha = {}
 export {user, math}
 
 export {alesha}
-const a = '2'
+const a: any = '2'
 export {a}
 
 
