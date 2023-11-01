@@ -10,20 +10,8 @@ const ImportExports = () => {
         setCount(state => state + 1)
     }
 
-    const [realComponent, setRealComponent] = useState<any>(null);
-
-    useEffect( () => {
-        import('./lazyImport').then((module) => {
-            setRealComponent(module.default);
-        });
-    }, []);
-    console.log(realComponent)
-
     return <section>
         <h1>ImportExports is here!</h1>
-        <svg height="210" width="500">
-            <line x1="0" y1="0" x2="200" y2="200" style={{stroke:"rgb(255,0,0)", strokeWidth:2}} />
-        </svg>
         <button onClick={handlerLastCount}>{count}</button>
     </section>
 }
