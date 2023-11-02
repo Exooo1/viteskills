@@ -14,6 +14,7 @@ import {CheckOnNumber} from "./utils/checkOnNumber";
 import {ImportExports} from "./flanagan/importsExports/importExports";
 import {PrintComponents} from "./components/print/printComponents";
 import {Upload} from "./components/uplaod/upload";
+import {OrdersUseEffect} from "./react/useEffect/ordersUseEffect";
 
 function App() {
     return (
@@ -28,7 +29,8 @@ function App() {
             {/*    /!*<Async/>*!/*/}
             {/*    /!*<CopyObject/>*!/*/}
             {/*    /!*<CheckOnNumber/>*!/*/}
-            <ImportExports/>
+            {/*<ImportExports/>*/}
+            <OrdersUseEffect/>
             {/*    <PrintComponents/>*/}
             {/*<Upload/>*/}
             {/*<PrintComponents/>*/}
