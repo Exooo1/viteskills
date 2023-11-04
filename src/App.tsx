@@ -29,8 +29,8 @@ function App() {
             {/*    /!*<Async/>*!/*/}
             {/*    /!*<CopyObject/>*!/*/}
             {/*    /!*<CheckOnNumber/>*!/*/}
-            {/*<ImportExports/>*/}
-            <OrdersUseEffect/>
+            <ImportExports/>
+            {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}
             {/*<Upload/>*/}
             {/*<PrintComponents/>*/}

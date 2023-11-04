@@ -22,7 +22,12 @@ const ImportExports = () => {
 // console.log(math.sayHello('diana'))
 // console.log(math.sayBye('diana'))
 //
-// import DefaultValue, {math, a} from './code';
+console.log(import.meta)
+const returnImage = (locale) =>{
+    return new URL(`${locale}.json`, import .meta.url);
+}
+console.log(returnImage('test'))
+import DefaultValue, {math, a} from './code';
 // import * as state from './code'
 //
 // console.log(state.user)
@@ -32,8 +37,11 @@ const ImportExports = () => {
 // import {math as doubleMath, default as Vlasik, vlas} from './utils'
 
 const t = async () => {
-    const {vlas} = await import ('./utils')
+    let {vlas} = await import ('./utils')
     console.log(vlas)
+    vlas = 2 as { name: string }
+    console.log(vlas)
+    console.log(import(''))
     return vlas
 }
 t()
