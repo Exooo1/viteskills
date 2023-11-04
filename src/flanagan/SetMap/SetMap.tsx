@@ -30,3 +30,7 @@ export const SetMap = () => {
 // console.log(setMississippi.has('M'))
 // console.log(setMississippi.keys().next())
 // console.log(setMississippi)
+
+let map = new Map();
+map.set(1, 'one')
+console.log(map)
