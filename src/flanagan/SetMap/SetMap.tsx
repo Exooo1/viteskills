@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const SetMap = () => {
     return <div>
         <h1>This is Set and Map!</h1>

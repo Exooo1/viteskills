@@ -15,6 +15,12 @@ const ComponentTwo = () =>{
 export const OrdersUseEffect = () =>{
     const [count,setCount]= useState(1)
     const [name,setName]= useState('vlas')
+    useLayoutEffect(()=>{
+        console.log('useLayoutEffect')
+        for(let i = 0; i < 1000; i++){
+
+        }
+    },[])
     console.log('OrdersUseEffect')
 
     useEffect(()=>{
@@ -27,12 +33,6 @@ export const OrdersUseEffect = () =>{
         setName('Diana')
     },[count])
 
-    useLayoutEffect(()=>{
-        console.log('useLayoutEffect')
-        for(let i = 0; i < 1000; i++){
-
-        }
-    },[])
 
     return <div>
         <h1>This is OrdersUseEffect!</h1>

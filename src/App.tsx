@@ -31,8 +31,8 @@ function App() {
             {/*    /!*<CopyObject/>*!/*/}
             {/*    /!*<CheckOnNumber/>*!/*/}
             {/*<ImportExports/>*/}
-            <SetMap/>
-            {/*<OrdersUseEffect/>*/}
+            {/*<SetMap/>*/}
+            <OrdersUseEffect/>
             {/*    <PrintComponents/>*/}
             {/*<Upload/>*/}
             {/*<PrintComponents/>*/}
