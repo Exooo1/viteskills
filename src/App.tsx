@@ -16,7 +16,7 @@ import {PrintComponents} from "./components/print/printComponents";
 import {Upload} from "./components/uplaod/upload";
 import {OrdersUseEffect} from "./react/useEffect/ordersUseEffect";
 import {SetMap} from "./flanagan/SetMap/SetMap";
-
+2
 function App() {
     return (
         <>
