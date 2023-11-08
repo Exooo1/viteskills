@@ -31,8 +31,44 @@ export const SetMap = () => {
 // console.log(setMississippi.delete({})) // return false
 // console.log(setMississippi.has('M'))
 // console.log(setMississippi.keys().next())
+// setMississippi.forEach(el=>{
+//     if(typeof el === 'object'){
+//         setMississippi.delete(el)
+//     }
+// })
 // console.log(setMississippi)
+//
+// const a = new Set()
+// a.add(23).add(24)
 
-let map = new Map();
+const o = {
+    a: 2,
+    b: 'b'
+}
+
+let map = new Map<number | string, (string | number)>(Object.entries(o));
 map.set(1, 'one')
+map.set(1, 'one')
+map.set(1, 'one')
+map.set(2, 'two')
+map.set(3, 'three').set('some',25)
 console.log(map)
+console.log(map.get(1))
+console.log(map.has('b'))
+console.log(map.delete('a'))
+console.log(map.size)
+
+const testMap = new Map([[1,2]])
+console.log(testMap)
+console.log(...testMap)
+for(let [v,b] of map){
+    console.log(`this is ${v} and ${b}`)
+}
+
+console.log(map.entries())
+console.log(map.values())
+console.log(...map.keys())
+const t = String(...map.keys())
+console.log(t)
+console.log(typeof t)
+console.log(map.forEach(el=>el))

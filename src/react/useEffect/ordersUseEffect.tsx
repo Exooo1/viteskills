@@ -1,38 +1,41 @@
 import {useEffect, useLayoutEffect, useState} from "react";
 
-const ComponentTwo = () =>{
+const ComponentTwo = () => {
     console.log('ComponentTwo')
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log('ComponentTwo USE')
-    },[])
+    }, [])
 
     return <section>
         <h1>I am two component</h1>
     </section>
 }
 
-export const OrdersUseEffect = () =>{
-    const [count,setCount]= useState(1)
-    const [name,setName]= useState('vlas')
-    useLayoutEffect(()=>{
+export const OrdersUseEffect = () => {
+    const [count, setCount] = useState(1)
+    const [name, setName] = useState('vlas')
+    useLayoutEffect(() => {
         console.log('useLayoutEffect')
-        for(let i = 0; i < 1000; i++){
+        for (let i = 0; i < 1000; i++) {
 
         }
-    },[])
+    }, [])
     console.log('OrdersUseEffect')
 
-    useEffect(()=>{
-       console.log('FIRST USE')
+    useEffect(() => {
+        console.log('FIRST USE')
         setCount(2)
-    },[])
+    }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log('TWO USE')
         setName('Diana')
-    },[count])
+    }, [count])
 
+    useEffect(() => {
+        console.log('It was amazing experience, thank you for this!')
+    }, [])
 
     return <div>
         <h1>This is OrdersUseEffect!</h1>
