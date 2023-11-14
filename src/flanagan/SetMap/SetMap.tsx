@@ -51,17 +51,17 @@ map.set(1, 'one')
 map.set(1, 'one')
 map.set(1, 'one')
 map.set(2, 'two')
-map.set(3, 'three').set('some',25)
+map.set(3, 'three').set('some', 25)
 console.log(map)
 console.log(map.get(1))
 console.log(map.has('b'))
 console.log(map.delete('a'))
 console.log(map.size)
 
-const testMap = new Map([[1,2]])
+const testMap = new Map([[1, 2]])
 console.log(testMap)
 console.log(...testMap)
-for(let [v,b] of map){
+for (let [v, b] of map) {
     console.log(`this is ${v} and ${b}`)
 }
 
@@ -71,4 +71,12 @@ console.log(...map.keys())
 const t = String(...map.keys())
 console.log(t)
 console.log(typeof t)
-console.log(map.forEach(el=>el))
+console.log(map.forEach(el => el))
+
+const user = {
+    age: 25,
+    name: 'vlas'
+}
+
+const newMap = new Map([...Object.entries(user)])
+console.log(newMap)
