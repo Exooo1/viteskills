@@ -16,6 +16,7 @@ import {PrintComponents} from "./components/print/printComponents";
 import {Upload} from "./components/uplaod/upload";
 import {OrdersUseEffect} from "./react/useEffect/ordersUseEffect";
 import {SetMap} from "./flanagan/SetMap/SetMap";
+import {WeakSetMap} from "./flanagan/SetMap/WeakSetMap";
 
 function App() {
     return (
@@ -31,7 +32,8 @@ function App() {
             {/*    /!*<CopyObject/>*!/*/}
             {/*    /!*<CheckOnNumber/>*!/*/}
             {/*<ImportExports/>*/}
-            <SetMap/>
+            {/*<SetMap/>*/}
+            <WeakSetMap/>
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}
             {/*<Upload/>*/}
