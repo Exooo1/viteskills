@@ -393,3 +393,61 @@ console.log(diana.toString())
 console.log(diana.eat())
 console.log(diana.run())
 console.log(diana.sleep())
+
+
+// function Animal() {
+// }
+//
+// Animal.prototype.hello = () => {
+//     console.log('Hello')
+// }
+//
+// function Car(name: string) {
+//
+// }
+//
+// Car.prototype = Object.create(Animal.prototype)
+// const bmv = new Car('22')
+// bmv.hello()
+// console.log(bmv.constructor instanceof Car)
+// console.log(bmv)
+// console.log(bmv.__proto__,'bmv.__proto__')
+// console.log(Car)
+// //ts-ignore
+// Object.prototype.vlas = 'Hello vlas'
+// const  a = {}
+// //ts-ignore
+// console.log(a.vlas)
+// console.log(a)
+//
+
+// class Animal1 {
+// }
+//
+// Animal.prototype.hello = () => {
+//     console.log('Hello')
+// }
+//
+// class Car1 {
+//     constructor(s: string) {
+//     }
+// }
+//
+// Car1.prototype = Object.create(Animal1.prototype)
+// const bmv1 = new Car1('22')
+// console.log(bmv1 instanceof Car1)
+// console.log(bmv1)
+// console.log(Car1)
+
+//
+//
+// function Anim(){
+//
+// }
+// Anim.prototype.vlas = '222'
+//
+// function Dog(){
+//
+// }
+// Dog.prototype = Object.create(Anim.prototype)
+
