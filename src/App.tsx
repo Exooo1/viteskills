@@ -18,30 +18,33 @@ import {OrdersUseEffect} from "./react/useEffect/ordersUseEffect";
 import {SetMap} from "./flanagan/SetMap/SetMap";
 import {WeakSetMap} from "./flanagan/SetMap/WeakSetMap";
 import {TypeArray} from "./flanagan/typeArray/typeArray";
+import {ResizeModal} from "./components/modal/resizeModal/resizeModal";
 
 function App() {
     return (
-        <>
-            {/*<div>*/}
-            {/*    /!*<DragAndDrop/>*!/*/}
-            {/*    <LeetCode/>*/}
-            {/*    /!*<Function/>*!/*/}
-            {/*    /!*<ConsoleLoggin/>*!/*/}
-            {/*    /!*<Memoization/>*!/*/}
-            {/*    /!*<Class/>*!/*/}
-            {/*    /!*<Async/>*!/*/}
-            {/*    /!*<CopyObject/>*!/*/}
-            {/*    /!*<CheckOnNumber/>*!/*/}
-            {/*<ImportExports/>*/}
-            {/*<SetMap/>*/}
-            {/*<WeakSetMap/>*/}
-            <TypeArray/>
-            {/*<OrdersUseEffect/>*/}
-            {/*    <PrintComponents/>*/}
-            {/*<Upload/>*/}
-            {/*<PrintComponents/>*/}
-            {/*</div>*/}
-        </>
+        <ResizeModal/>
+        // <>
+        //     {/*<div>*/}
+        //     {/*    /!*<DragAndDrop/>*!/*/}
+        //     {/*    <LeetCode/>*/}
+        //     {/*    /!*<Function/>*!/*/}
+        //     {/*    /!*<ConsoleLoggin/>*!/*/}
+        //     {/*    /!*<Memoization/>*!/*/}
+        //     {/*    /!*<Class/>*!/*/}
+        //     {/*    /!*<Async/>*!/*/}
+        //     {/*    /!*<CopyObject/>*!/*/}
+        //     {/*    /!*<CheckOnNumber/>*!/*/}
+        //     {/*<ImportExports/>*/}
+        //     {/*<SetMap/>*/}
+        //     {/*<WeakSetMap/>*/}
+        //     {/*<TypeArray/>*/}
+        //     <ResizeModal/>
+        //     {/*<OrdersUseEffect/>*/}
+        //     {/*    <PrintComponents/>*/}
+        //     {/*<Upload/>*/}
+        //     {/*<PrintComponents/>*/}
+        //     {/*</div>*/}
+        // </>
     )
 }
 
