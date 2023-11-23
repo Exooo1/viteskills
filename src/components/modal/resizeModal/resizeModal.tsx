@@ -2,37 +2,53 @@ import styles from './resize.module.scss'
 import {useEffect, useState} from "react";
 
 export const ResizeModal = () => {
-    const [isFix, setIsFix] = useState(0)
-    const [currentWidth, setCurrentWidth] = useState(300)
-    const [width1, setWidth1] = useState(300)
-    const [isChange,setIsChange] = useState(false)
+    const [isResize, setIsResize] = useState(false)
+    const [width, setWidth] = useState(300)
+    const [x, setX] = useState(0)
 
-    const handlerMouseDown = (e: any, is:boolean) => {
-        setIsFix(e.clientX)
-        setIsChange(is)
+    const handlerMouseDown = (e) => {
+        setX(e.clientX)
+        setIsResize(true)
     }
 
-    const func = (e) => {
-        const result = e.clientX - isFix
-        console.log(isFix)
-        console.log(e.clientX)
-        setCurrentWidth(result + currentWidth)
-
+    const handlerResize = (e) => {
+        const result = e.clientX - x
+        setWidth(result + width)
     }
+
+    const handlerMouseUp = () => {
+        setIsResize(false)
+    }
+
 
     useEffect(() => {
-        if (isChange) {
-            document.addEventListener('mousemove',func)
+        if (isResize) {
+            window.addEventListener('mousemove', handlerResize)
         }
-        return () => document.removeEventListener('mousemove', func)
-    }, [isChange])
-    console.log(isFix)
-    return <div className={styles.resize} onMouseUp={(e)=>handlerMouseDown(e,false)}>
-        <div className={styles.resize_window} onMouseDown={(e)=>handlerMouseDown(e,true)} style={{width: `${currentWidth}px`}}>
+        return () => window.removeEventListener('mousemove', handlerResize)
+    }, [isResize])
+
+    useEffect(() => {
+        const element = document.getElementById('content')
+        var rect = element.getBoundingClientRect();
+        console.log(rect)
+        element.addEventListener('mousemove', (event) => {
+            var x = event.clientX - rect.left; // Координата X курсора относительно элемента
+            var y = event.clientY - rect.top;  // Координата Y курсора относительно элемента
+
+            // Определение направления движения
+            var directionX = x > element.clientWidth / 2 ? 'right' : 'left';
+            var directionY = y > element.clientHeight / 2 ? 'down' : 'up';
+            console.log(directionY)
+        })
+    }, [])
+
+    return <div className={styles.resize} onMouseUp={handlerMouseUp}>
+        <div className={styles.resize_window} style={{width: `${width}px`}} onMouseDown={handlerMouseDown}>
             <div className={styles.resize_window_content}
-                 onMouseDown={(e) => e.stopPropagation()}>
-                <p>width</p>
-                <p>width1{width1}</p>
+                 id={'content'}
+                 onMouseDown={(e) => e.stopPropagation()} onMouseUp={handlerMouseUp}>
+                <p>Hello this is Vlas</p>
             </div>
         </div>
     </div>
