@@ -1,5 +1,6 @@
 import styles from './resize.module.scss'
 import {useEffect, useState} from "react";
+import axios from "axios";
 
 export const ResizeModal = () => {
     const [isResize, setIsResize] = useState(false)
@@ -42,6 +43,14 @@ export const ResizeModal = () => {
             console.log(directionY)
         })
     }, [])
+
+    useEffect( ()=>{
+        const func = async () =>{
+            const result = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd');
+            console.log(result)
+        }
+        func()
+    },[])
 
     return <div className={styles.resize} onMouseUp={handlerMouseUp}>
         <div className={styles.resize_window} style={{width: `${width}px`}} onMouseDown={handlerMouseDown}>
