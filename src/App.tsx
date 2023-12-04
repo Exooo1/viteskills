@@ -19,32 +19,36 @@ import {SetMap} from "./flanagan/SetMap/SetMap";
 import {WeakSetMap} from "./flanagan/SetMap/WeakSetMap";
 import {TypeArray} from "./flanagan/typeArray/typeArray";
 import {ResizeModal} from "./components/modal/resizeModal/resizeModal";
+import {Details} from "./html/details/details";
+import {OwnHooks} from "./react/hooks/ownHooks";
 
 function App() {
     return (
-        <ResizeModal/>
-        // <>
-        //     {/*<div>*/}
-        //     {/*    /!*<DragAndDrop/>*!/*/}
-        //     {/*    <LeetCode/>*/}
-        //     {/*    /!*<Function/>*!/*/}
-        //     {/*    /!*<ConsoleLoggin/>*!/*/}
-        //     {/*    /!*<Memoization/>*!/*/}
-        //     {/*    /!*<Class/>*!/*/}
-        //     {/*    /!*<Async/>*!/*/}
-        //     {/*    /!*<CopyObject/>*!/*/}
-        //     {/*    /!*<CheckOnNumber/>*!/*/}
-        //     {/*<ImportExports/>*/}
-        //     {/*<SetMap/>*/}
-        //     {/*<WeakSetMap/>*/}
-        //     {/*<TypeArray/>*/}
-        //     <ResizeModal/>
-        //     {/*<OrdersUseEffect/>*/}
-        //     {/*    <PrintComponents/>*/}
-        //     {/*<Upload/>*/}
-        //     {/*<PrintComponents/>*/}
-        //     {/*</div>*/}
-        // </>
+        <>
+            {/*<Details/>*/}
+            {/*<ResizeModal/>*/}
+            {/*<div>*/}
+            {/*    /!*<DragAndDrop/>*!/*/}
+            {/*    <LeetCode/>*/}
+            {/*    /!*<Function/>*!/*/}
+            {/*    /!*<ConsoleLoggin/>*!/*/}
+            {/*    /!*<Memoization/>*!/*/}
+            {/*    /!*<Class/>*!/*/}
+            {/*    /!*<Async/>*!/*/}
+            {/*    /!*<CopyObject/>*!/*/}
+            {/*    /!*<CheckOnNumber/>*!/*/}
+            {/*<ImportExports/>*/}
+            <OwnHooks/>
+            {/*<SetMap/>*/}
+            {/*<WeakSetMap/>*/}
+            {/*<TypeArray/>*/}
+            {/*<ResizeModal/>*/}
+            {/*<OrdersUseEffect/>*/}
+            {/*    <PrintComponents/>*/}
+            {/*<Upload/>*/}
+            {/*<PrintComponents/>*/}
+            {/*</div>*/}
+        </>
     )
 }
 

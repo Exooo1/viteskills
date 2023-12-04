@@ -23,12 +23,13 @@ const ImportExports = () => {
 // console.log(math.sayBye('diana'))
 //
 console.log(import.meta)
-const returnImage = (locale) =>{
+const returnImage =  (locale) =>{
     return new URL(`${locale}.json`, import .meta.url);
 }
 console.log(returnImage('test'))
 import DefaultValue, {math, a} from './code';
-// import * as state from './code'
+import * as state from './code'
+console.log(state)
 //
 // console.log(state.user)
 // console.log(state.default)
