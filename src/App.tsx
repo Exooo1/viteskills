@@ -21,6 +21,7 @@ import {TypeArray} from "./flanagan/typeArray/typeArray";
 import {ResizeModal} from "./components/modal/resizeModal/resizeModal";
 import {Details} from "./html/details/details";
 import {OwnHooks} from "./react/hooks/ownHooks";
+import {TicTac} from "./components/ticTac/tic-tac";
 
 function App() {
     return (
@@ -38,7 +39,8 @@ function App() {
             {/*    /!*<CopyObject/>*!/*/}
             {/*    /!*<CheckOnNumber/>*!/*/}
             {/*<ImportExports/>*/}
-            <OwnHooks/>
+            {/*<OwnHooks/>*/}
+            <TicTac/>
             {/*<SetMap/>*/}
             {/*<WeakSetMap/>*/}
             {/*<TypeArray/>*/}

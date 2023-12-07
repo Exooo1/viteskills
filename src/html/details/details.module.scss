@@ -1,0 +1,31 @@
+.details {
+  transition: 1s;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 5px black;
+
+  &[open] {
+    background: green;
+  }
+
+  &[open] > summary {
+    background: #1a1a1a;
+    color: white;
+  }
+
+  ul {
+    transition: 1s;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+details summary::-webkit-details-marker {
+  background: red;
+  color: #fff;
+  font-size: 500%;
+}
