@@ -40,10 +40,10 @@ function App() {
             {/*    /!*<CheckOnNumber/>*!/*/}
             {/*<ImportExports/>*/}
             {/*<OwnHooks/>*/}
-            <TicTac/>
+            {/*<TicTac/>*/}
             {/*<SetMap/>*/}
             {/*<WeakSetMap/>*/}
-            {/*<TypeArray/>*/}
+            <TypeArray/>
             {/*<ResizeModal/>*/}
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}
