@@ -1,10 +1,8 @@
 import styles from './tictac.module.scss'
 import {useState} from "react";
 
-const DEFAULT_TIC = ['', '', '', '', '', '', '', '', '']
-
 export const TicTac = ({title}) => {
-    const [tic, setTic] = useState(DEFAULT_TIC)
+    const [tic, setTic] = useState(Array(9).fill(''))
     const [isTurn, setIsTurn] = useState(false)
     const [winner, setWinners] = useState('')
     const [comb, setComb] = useState([])
@@ -12,15 +10,15 @@ export const TicTac = ({title}) => {
 
     const handlerTicTac = (index) => {
         if (winner) return
+        const newTic = [...tic]
         if (tic[index] === '') {
-            const newTic = [...tic]
             newTic[index] = isTurn ? 'X' : '0'
             setTic(newTic)
             setIsTurn(!isTurn)
             setHistory([...history, newTic])
         }
         combinationWins.forEach(el => {
-            const checkCorrectLines = [tic[el[0]], tic[el[1]], tic[el[2]]]
+            const checkCorrectLines = [newTic[el[0]], newTic[el[1]], newTic[el[2]]]
             const firstElem = checkCorrectLines[0]
             if (checkCorrectLines.filter(el => el === firstElem && el !== '').length === 3) {
                 setWinners(tic[el[0]])
