@@ -23,6 +23,8 @@ import {Details} from "./html/details/details";
 import {OwnHooks} from "./react/hooks/ownHooks";
 import {TicTac} from "./components/ticTac/tic-tac";
 import {RecordAudio} from "./components/recordAudio/recordAudio";
+import {Text} from "./css/text/text";
+import {Image} from "./css/image/image";
 
 function App() {
     return (
@@ -41,7 +43,7 @@ function App() {
             {/*    /!*<CheckOnNumber/>*!/*/}
             {/*<ImportExports/>*/}
             {/*<OwnHooks/>*/}
-            <TicTac/>
+            {/*<TicTac/>*/}
             {/*<RecordAudio/>*/}
             {/*<SetMap/>*/}
             {/*<WeakSetMap/>*/}
@@ -52,6 +54,8 @@ function App() {
             {/*<Upload/>*/}
             {/*<PrintComponents/>*/}
             {/*</div>*/}
+            {/*<Text/>*/}
+            <Image/>
         </>
     )
 }

@@ -1,0 +1,14 @@
+.container {
+  &_text_block {
+    width: 200px;
+    height: 60px;
+    background: darkgrey;
+    line-height: 60px;
+
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
