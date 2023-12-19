@@ -1,10 +1,11 @@
 import styles from './tictac.module.scss'
 import {useState} from "react";
 
+let winner = ''
+
 export const TicTac = ({title}) => {
     const [tic, setTic] = useState(Array(9).fill(''))
     const [isTurn, setIsTurn] = useState(false)
-    const [winner, setWinners] = useState('')
     const [comb, setComb] = useState([])
     const [history, setHistory] = useState([])
 
@@ -21,13 +22,14 @@ export const TicTac = ({title}) => {
             const checkCorrectLines = [newTic[el[0]], newTic[el[1]], newTic[el[2]]]
             const firstElem = checkCorrectLines[0]
             if (checkCorrectLines.filter(el => el === firstElem && el !== '').length === 3) {
-                setWinners(tic[el[0]])
+                winner = tic[el[0]]
                 setComb(el)
             }
         })
     }
 
     const handlerHistory = (history) => {
+        setIsTurn(!isTurn)
         setTic(history)
     }
 
@@ -41,6 +43,7 @@ export const TicTac = ({title}) => {
         [0, 4, 8],
         [2, 4, 6],
     ]
+
     //Не выведет title потому что он undefined
     //<h1>Hello this is TicTac {title}{null}{-1}{NaN}{Infinity}</h1> Выведет только -1 NaN Infinity (потому что будет преобразовано в toString() класса Number)
 

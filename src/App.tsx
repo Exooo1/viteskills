@@ -22,6 +22,7 @@ import {ResizeModal} from "./components/modal/resizeModal/resizeModal";
 import {Details} from "./html/details/details";
 import {OwnHooks} from "./react/hooks/ownHooks";
 import {TicTac} from "./components/ticTac/tic-tac";
+import {RecordAudio} from "./components/recordAudio/recordAudio";
 
 function App() {
     return (
@@ -41,6 +42,7 @@ function App() {
             {/*<ImportExports/>*/}
             {/*<OwnHooks/>*/}
             <TicTac/>
+            {/*<RecordAudio/>*/}
             {/*<SetMap/>*/}
             {/*<WeakSetMap/>*/}
             {/*<TypeArray/>*/}
