@@ -26,6 +26,8 @@ import {RecordAudio} from "./components/recordAudio/recordAudio";
 import {Text} from "./css/text/text";
 import {Image} from "./css/image/image";
 import {Hierarchy} from "./react/hierarchy/hierarchy";
+import {RegExp} from "./flanagan/regExp/regExp";
+import {ReactChilds} from "./react/react-child/react-childs";
 
 function App() {
     return (
@@ -49,6 +51,8 @@ function App() {
             {/*<SetMap/>*/}
             {/*<WeakSetMap/>*/}
             {/*<TypeArray/>*/}
+            {/*<RegExp/>*/}
+            <ReactChilds/>
             {/*<ResizeModal/>*/}
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}
@@ -57,7 +61,7 @@ function App() {
             {/*</div>*/}
             {/*<Text/>*/}
             {/*<Image/>*/}
-            <Hierarchy/>
+            {/*<Hierarchy/>*/}
         </>
     )
 }

@@ -1,3 +1,4 @@
+import svg from '../../assets/react.svg'
 export const TypeArray = () => {
     return <div>
         <h1>This is TypeArray!</h1>
@@ -82,3 +83,6 @@ const value = dataView.getUint8(0);
 const value2 = dataView.getUint8(1);
 console.log(value,value2);
 console.log(dataView);
+const bufferы1 = new ArrayBuffer(svg);
+const dataView1 = new DataView(bufferы1);
+console.log(dataView1.getInt16(0))
