@@ -1,0 +1,15 @@
+.container {
+
+  &_notDiv {
+    width: 300px;
+    background: green;
+
+    button {
+      &:not(:only-of-type) {
+        background: black;
+      }
+
+      background: white;
+    }
+  }
+}

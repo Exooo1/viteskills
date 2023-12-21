@@ -29,6 +29,8 @@ import {Hierarchy} from "./react/hierarchy/hierarchy";
 import {RegExp} from "./flanagan/regExp/regExp";
 import {ReactChilds} from "./react/react-child/react-childs";
 import {Unknown} from "./typeScript/unknown";
+import {HasTsx} from "./css/has/has";
+import {NotTsx} from "./css/not/not";
 
 function App() {
     return (
@@ -54,7 +56,9 @@ function App() {
             {/*<TypeArray/>*/}
             {/*<RegExp/>*/}
             {/*<ReactChilds/>*/}
-            <Unknown/>
+            {/*<Unknown/>*/}
+            <HasTsx/>
+            {/*<NotTsx/>*/}
             {/*<ResizeModal/>*/}
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}

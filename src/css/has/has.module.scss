@@ -1,0 +1,30 @@
+.container {
+  &_divHas {
+    background: white;
+
+    p {
+      color: black;
+    }
+
+    &:has(:nth-child(5)) {
+      background: #646cff;
+    }
+
+    &:has(:nth-child(10)) {
+      background: greenyellow;
+    }
+
+    &:has(option:nth-of-type(15)) {
+      background: saddlebrown;
+    }
+
+
+    &:has(span:nth-of-type(5)) {
+      font-weight: 900;
+
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+}
