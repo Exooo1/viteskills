@@ -23,19 +23,19 @@ const user4 = structuredClone(user)
 user4.good.test.surname = 'Arhimed'
 user2 = JSON.parse(user2)
 user1.name = 'Vlas'
-user2.name = 'Obema'
+// user2.name = 'Obema'
 user1.good.test.surname = 'alesha'
 
 
-for( let val in user){
-    user3[val] = user[val]
-}
-user3.good.test = {surname:'zalupa'}
+// for( let val in user){
+//     user3[val] = user[val]
+// }
+// user3.good.test = {surname:'zalupa'}
 
 console.log(user)
 console.log(user1)
 console.log(user2)
 console.log(user3)
 console.log(user4)
-console.log(user['test'])
+// console.log(user['test'])
 

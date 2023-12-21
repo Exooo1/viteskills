@@ -13,7 +13,7 @@ console.log(isFinite(+'22aas'))
 const a = 215
 const b = '217'
 const c = '213abj'
-const checkNumber = (value) => {
+const checkNumber = (value:any) => {
     if (typeof value === "number") return true
     if (typeof value === 'string') {
         return !isNaN(+value);

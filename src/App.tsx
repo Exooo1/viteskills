@@ -28,6 +28,7 @@ import {Image} from "./css/image/image";
 import {Hierarchy} from "./react/hierarchy/hierarchy";
 import {RegExp} from "./flanagan/regExp/regExp";
 import {ReactChilds} from "./react/react-child/react-childs";
+import {Unknown} from "./typeScript/unknown";
 
 function App() {
     return (
@@ -52,7 +53,8 @@ function App() {
             {/*<WeakSetMap/>*/}
             {/*<TypeArray/>*/}
             {/*<RegExp/>*/}
-            <ReactChilds/>
+            {/*<ReactChilds/>*/}
+            <Unknown/>
             {/*<ResizeModal/>*/}
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}

@@ -7,12 +7,12 @@ export const ResizeModal = () => {
     const [width, setWidth] = useState(300)
     const [x, setX] = useState(0)
 
-    const handlerMouseDown = (e) => {
+    const handlerMouseDown = (e:any) => {
         setX(e.clientX)
         setIsResize(true)
     }
 
-    const handlerResize = (e) => {
+    const handlerResize = (e:any) => {
         const result = e.clientX - x
         setWidth(result + width)
     }
@@ -32,7 +32,7 @@ export const ResizeModal = () => {
     useEffect(() => {
         const element = document.getElementById('content')
         var rect = element.getBoundingClientRect();
-        console.log(rect)
+
         element.addEventListener('mousemove', (event) => {
             var x = event.clientX - rect.left; // Координата X курсора относительно элемента
             var y = event.clientY - rect.top;  // Координата Y курсора относительно элемента
