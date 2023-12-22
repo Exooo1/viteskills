@@ -55,9 +55,9 @@ function App() {
             {/*<WeakSetMap/>*/}
             {/*<TypeArray/>*/}
             {/*<RegExp/>*/}
-            {/*<ReactChilds/>*/}
+            <ReactChilds/>
             {/*<Unknown/>*/}
-            <HasTsx/>
+            {/*<HasTsx/>*/}
             {/*<NotTsx/>*/}
             {/*<ResizeModal/>*/}
             {/*<OrdersUseEffect/>*/}
