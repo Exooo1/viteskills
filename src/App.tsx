@@ -31,6 +31,7 @@ import {ReactChilds} from "./react/react-child/react-childs";
 import {Unknown} from "./typeScript/unknown";
 import {HasTsx} from "./css/has/has";
 import {NotTsx} from "./css/not/not";
+import {GroupBy} from "./js/groupBy";
 
 function App() {
     return (
@@ -55,7 +56,8 @@ function App() {
             {/*<WeakSetMap/>*/}
             {/*<TypeArray/>*/}
             {/*<RegExp/>*/}
-            <ReactChilds/>
+            {/*<ReactChilds/>*/}
+            <GroupBy/>
             {/*<Unknown/>*/}
             {/*<HasTsx/>*/}
             {/*<NotTsx/>*/}
