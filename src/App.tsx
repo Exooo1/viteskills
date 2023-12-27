@@ -32,6 +32,7 @@ import {Unknown} from "./typeScript/unknown";
 import {HasTsx} from "./css/has/has";
 import {NotTsx} from "./css/not/not";
 import {GroupBy} from "./js/groupBy";
+import {Fragment} from "./react/fragment/fragment";
 
 function App() {
     return (
@@ -57,7 +58,7 @@ function App() {
             {/*<TypeArray/>*/}
             {/*<RegExp/>*/}
             {/*<ReactChilds/>*/}
-            <GroupBy/>
+            {/*<GroupBy/>*/}
             {/*<Unknown/>*/}
             {/*<HasTsx/>*/}
             {/*<NotTsx/>*/}
@@ -70,6 +71,7 @@ function App() {
             {/*<Text/>*/}
             {/*<Image/>*/}
             {/*<Hierarchy/>*/}
+            <Fragment/>
         </>
     )
 }

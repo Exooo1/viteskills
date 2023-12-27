@@ -20,6 +20,6 @@ export const Hierarchy = () => {
     return <div>
         <h1>This is Hierarchy!</h1>
         <button onClick={() => setCount(state => state + 1)}>{count}</button>
-        <TestComponent count={count1} setCount1={handlerSetCount}/>
+        <TestComponent count={count1} setCount1={handlerSetCount} setCount2={setCount1}/>
     </div>
 }
