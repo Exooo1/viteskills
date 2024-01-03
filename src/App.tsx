@@ -33,6 +33,7 @@ import {HasTsx} from "./css/has/has";
 import {NotTsx} from "./css/not/not";
 import {GroupBy} from "./js/groupBy";
 import {Fragment} from "./react/fragment/fragment";
+import {PolymorphicComponent} from "./react/polymorphic/polymorphic-component";
 
 function App() {
     return (
@@ -71,7 +72,8 @@ function App() {
             {/*<Text/>*/}
             {/*<Image/>*/}
             {/*<Hierarchy/>*/}
-            <Fragment/>
+            {/*<Fragment/>*/}
+            <PolymorphicComponent/>
         </>
     )
 }
