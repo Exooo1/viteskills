@@ -34,6 +34,7 @@ import {NotTsx} from "./css/not/not";
 import {GroupBy} from "./js/groupBy";
 import {Fragment} from "./react/fragment/fragment";
 import {PolymorphicComponent} from "./react/polymorphic/polymorphic-component";
+import {RepeatLetter} from "./components/repeatLetters/repeatLetter";
 
 function App() {
     return (
@@ -73,7 +74,8 @@ function App() {
             {/*<Image/>*/}
             {/*<Hierarchy/>*/}
             {/*<Fragment/>*/}
-            <PolymorphicComponent/>
+            {/*<PolymorphicComponent/>*/}
+            <RepeatLetter/>
         </>
     )
 }
