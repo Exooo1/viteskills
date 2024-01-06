@@ -35,6 +35,7 @@ import {GroupBy} from "./js/groupBy";
 import {Fragment} from "./react/fragment/fragment";
 import {PolymorphicComponent} from "./react/polymorphic/polymorphic-component";
 import {RepeatLetter} from "./components/repeatLetters/repeatLetter";
+import {Cars} from "./react/task-react/cars";
 
 function App() {
     return (
@@ -75,7 +76,8 @@ function App() {
             {/*<Hierarchy/>*/}
             {/*<Fragment/>*/}
             {/*<PolymorphicComponent/>*/}
-            <RepeatLetter/>
+            {/*<RepeatLetter/>*/}
+            <Cars/>
         </>
     )
 }
