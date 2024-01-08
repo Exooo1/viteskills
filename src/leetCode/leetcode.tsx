@@ -10,21 +10,6 @@ function Animal() {
     }
 }
 
-function Common() {
-    this.funct = function () {
-        return 'funct'
-    }
-}
-
-Common.prototype.sayHello = () =>{
-    return 'Hello motherFucker'
-}
-
-Animal.prototype = Object.create(Common.prototype)
-Animal.prototype.constructor = Animal
-console.log(new Animal().sayHello())
-
-
 // const recurs = (obj, path, count) => {
 //     if (count === path.length) return obj
 //     return recurs(obj[path[count]], path, count + 1)
