@@ -36,6 +36,7 @@ import {Fragment} from "./react/fragment/fragment";
 import {PolymorphicComponent} from "./react/polymorphic/polymorphic-component";
 import {RepeatLetter} from "./components/repeatLetters/repeatLetter";
 import {Cars} from "./react/task-react/cars";
+import {PropsComponent} from "./react/props/propsComponent";
 
 function App() {
     return (
@@ -77,7 +78,8 @@ function App() {
             {/*<Fragment/>*/}
             {/*<PolymorphicComponent/>*/}
             {/*<RepeatLetter/>*/}
-            <Cars/>
+            {/*<Cars/>*/}
+            <PropsComponent/>
         </>
     )
 }
