@@ -1,0 +1,14 @@
+.timefill {
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  background: white;
+
+  div {
+    border-radius: 10px;
+    background: darkgrey;
+    width: 0;
+    height: 50px;
+    color: white;
+  }
+}

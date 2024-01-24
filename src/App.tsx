@@ -37,6 +37,7 @@ import {PolymorphicComponent} from "./react/polymorphic/polymorphic-component";
 import {RepeatLetter} from "./components/repeatLetters/repeatLetter";
 import {Cars} from "./react/task-react/cars";
 import {PropsComponent} from "./react/props/propsComponent";
+import {TimeFill} from "./components/time/time-fill";
 
 function App() {
     return (
@@ -66,7 +67,7 @@ function App() {
             {/*<Unknown/>*/}
             {/*<HasTsx/>*/}
             {/*<NotTsx/>*/}
-            {/*<ResizeModal/>*/}
+            <ResizeModal/>
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}
             {/*<Upload/>*/}
@@ -79,7 +80,8 @@ function App() {
             {/*<PolymorphicComponent/>*/}
             {/*<RepeatLetter/>*/}
             {/*<Cars/>*/}
-            <PropsComponent/>
+            {/*<PropsComponent/>*/}
+            {/*<TimeFill/>*/}
         </>
     )
 }
