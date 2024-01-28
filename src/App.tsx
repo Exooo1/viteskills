@@ -38,6 +38,7 @@ import {RepeatLetter} from "./components/repeatLetters/repeatLetter";
 import {Cars} from "./react/task-react/cars";
 import {PropsComponent} from "./react/props/propsComponent";
 import {TimeFill} from "./components/time/time-fill";
+import {Generators} from "./flanagan/function/generators";
 
 function App() {
     return (
@@ -67,7 +68,7 @@ function App() {
             {/*<Unknown/>*/}
             {/*<HasTsx/>*/}
             {/*<NotTsx/>*/}
-            <ResizeModal/>
+            {/*<ResizeModal/>*/}
             {/*<OrdersUseEffect/>*/}
             {/*    <PrintComponents/>*/}
             {/*<Upload/>*/}
@@ -82,6 +83,7 @@ function App() {
             {/*<Cars/>*/}
             {/*<PropsComponent/>*/}
             {/*<TimeFill/>*/}
+            <Generators/>
         </>
     )
 }
